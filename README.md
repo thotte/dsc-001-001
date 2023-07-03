@@ -8,3 +8,5 @@ Data science repository
 ](
     https://vscode.dev/redirect?url=vscode://ms-vscode-remote.remote-containers/cloneInVolume?url=https://github.com/thotte/dsc-001-001
 )
+
+Now with pre-commits

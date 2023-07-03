@@ -7,7 +7,7 @@ RUN apt update && \
     apt install -y sudo && \
     sudo apt install \
         default-jdk \
-        jq \ 
+        jq \
         bash-completion \
         -y
 
@@ -30,5 +30,3 @@ RUN pip install -r /tmp/requirements.txt && \
 COPY --chown=nonroot:1000 requirements-dev.txt /tmp/requirements-dev.txt
 RUN pip install -r /tmp/requirements-dev.txt && \
     rm /tmp/requirements-dev.txt
-
-
