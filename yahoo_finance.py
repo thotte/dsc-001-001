@@ -39,7 +39,7 @@ def save_data(dataframe, filename):
 for tik in ticker_list:
     get_data(tik)
 
-TICKER_ITEMS = len(ticker_list) - 1
+TICKER_ITEMS = len(ticker_list)
 for i in range(TICKER_ITEMS):
     df1 = pd.read_csv(f"./data/{str(files[i])}.csv")
     print(df1.head())
