@@ -9,6 +9,21 @@ on:
 permissions: write-all
 
 jobs:
+  pre-commit:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    - uses: actions/setup-python@v3
+    - name: Install pre-commit
+      run: |
+        pip install pre-commit
+    - name: Install requirements
+      run: |
+        pip install -r requirements.txt
+    - name: Run pre-commit
+      run: pre-commit run --all-files
+
   build:
     runs-on: ubuntu-latest
 
