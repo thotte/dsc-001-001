@@ -1,0 +1,19 @@
+# .coveragerc to control coverage.py
+[run]
+branch = True
+source =
+    ./
+
+[report]
+omit =
+    test_*
+
+
+ignore_errors = False
+
+[html]
+directory = coverage_html_report
+
+[json]
+output = code_coverage.json
+pretty_print = True
